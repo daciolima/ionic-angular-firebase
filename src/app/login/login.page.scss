@@ -1,0 +1,17 @@
+ion-content {
+  --ion-background-color: #FFFFCC;
+  --background: none;
+  background-image: url('../../assets/back-blue.jpeg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center top;
+  text-align: center;
+  --padding-botton: 16px;
+  --padding-end: 16px;
+  --padding-start: 16px;
+  --padding-top: 35px;
+}
+
+ion-button {
+  margin: 15px;
+}

@@ -1,0 +1,12 @@
+
+<ion-content [fullscreen]="true">
+  <img src="../../assets/icon.png" width="30%" />
+
+  <ion-button color="primary" expand="block" (click)="authService.loginWithFacebook()">
+    Entre com o Facebook
+  </ion-button>
+
+  <ion-button color="danger" expand="block" (click)="authService.loginWithGoogle()">
+    Entre com o Google
+  </ion-button>
+</ion-content>
