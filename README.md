@@ -1,5 +1,8 @@
 ## Projeto Ionic 6 e Angular 16
 
+Projeto Ionic 6 com Angula 16 que mostra um exemplo de App Task com OAuth2 Social Login pelo Firebase e Storage no Firestore.
+
+
 **Iniciando projeto Ionic**
 ```shell
 ionic start <nomeProjeto> <template> --type=angular --capacitor
