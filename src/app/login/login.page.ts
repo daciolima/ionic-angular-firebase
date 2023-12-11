@@ -12,7 +12,6 @@ export class LoginPage implements OnInit {
   constructor(public authService: AuthService, public router: Router) {
     this.authService.logged().subscribe(
       data => {
-        console.log(data)
         if(data != null) this.router.navigate(['home'])
       },
       err => console.log(err)

@@ -32,6 +32,17 @@ export class StorageService {
     this.timer.stop();
   }
 
+  async zerarTimerAtendimento() {
+    this.timer.stop();
+    await Preferences.set(
+      {
+        key: 'relogio',
+        value:  JSON.stringify("00:00:00")
+      }
+    );
+    return this.displayTimer();
+  }
+
   resetTimerAtendimento() {
     this.timer.reset();
   }
@@ -50,18 +61,18 @@ export class StorageService {
 
   // JSON "set"
     async setTimerLocalStorage() {
-      await Preferences.set(  
+      await Preferences.set(
         {
           key: 'relogio',
           value: JSON.stringify(this.displayTimer() )
         }
       );
-    } 
+    }
 
-  async getTimerLocaStorage() {    
+  async getTimerLocaStorage() {
     const relogio = await Preferences.get({key: 'relogio'})
     this.timer_atendimento = relogio.value ? JSON.parse(relogio.value) : null
-    console.log(this.timer_atendimento)  
+    console.log(this.timer_atendimento)
 
     }
 

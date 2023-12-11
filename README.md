@@ -1,6 +1,10 @@
 ## Projeto Ionic 6 e Angular 16
 
-Projeto Ionic 6 com Angula 16 que mostra um exemplo de App Task com OAuth2 Social Login pelo Firebase e Storage no Firestore.
+Projeto Ionic 6 com Angular 16 de um App Task:
+- OAuth2 Social Login pelo Firebase e Storage no Firestore;
+- Timer;
+- Captura de imagem por câmera.
+- Charts com ApexCharts
 
 
 **Iniciando projeto Ionic**

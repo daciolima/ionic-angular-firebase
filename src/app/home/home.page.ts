@@ -6,11 +6,14 @@ import { PopoverComponent } from '../popover/popover.component';
 import { CameraService } from '../services/camera.service';
 import { Observable } from 'rxjs';
 
+
 @Component({
   selector: 'app-home',
   templateUrl: 'home.page.html',
   styleUrls: ['home.page.scss'],
 })
+
+
 export class HomePage {
 
   type: string = "peding";
@@ -66,7 +69,7 @@ export class HomePage {
         {
           text: 'Salvar',
           role: 'confirm',
-          handler: (alertData) => {
+          handler: (alertData: any) => {
             if(alertData.title !== "" && alertData.description !== "" && alertData.date !== "") {
               this.taskService.addTask(
                 alertData.title,

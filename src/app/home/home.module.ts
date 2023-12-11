@@ -6,6 +6,11 @@ import { HomePage } from './home.page';
 
 import { HomePageRoutingModule } from './home-routing.module';
 import { PopoverComponent } from '../popover/popover.component';
+import { ChartsComponent } from '../charts/charts.component';
+
+import { NgApexchartsModule } from 'ng-apexcharts'
+import { ChartbarComponent } from '../chartbar/chartbar.component';
+import { ChartlineComponent } from '../chartline/chartline.component';
 
 
 @NgModule({
@@ -13,9 +18,10 @@ import { PopoverComponent } from '../popover/popover.component';
     CommonModule,
     FormsModule,
     IonicModule,
-    HomePageRoutingModule
+    HomePageRoutingModule,
+    NgApexchartsModule,
   ],
-  declarations: [HomePage, PopoverComponent],
+  declarations: [HomePage, PopoverComponent, ChartsComponent, ChartbarComponent, ChartlineComponent],
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
 export class HomePageModule {}

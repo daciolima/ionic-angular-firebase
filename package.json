@@ -31,10 +31,12 @@
     "@capacitor/status-bar": "5.0.6",
     "@ionic/angular": "^7.0.0",
     "@ionic/pwa-elements": "^3.2.2",
+    "apexcharts": "^3.44.2",
     "capacitor-firebase-auth": "^3.0.0",
     "easytimer.js": "^4.6.0",
     "firebase": "^10.7.1",
     "ionicons": "^7.0.0",
+    "ng-apexcharts": "^1.8.0",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.13.0"

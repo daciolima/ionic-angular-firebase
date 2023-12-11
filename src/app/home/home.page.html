@@ -93,12 +93,23 @@
       <ion-button (click)="storageService.startTimerAtendimento()" color="success">Iniciar</ion-button>
       <ion-button (click)="storageService.pauseTimerAtendimento()" color="primary">Pausar</ion-button>
       <ion-button (click)="storageService.stopTimerAtendimento()" color="warning">Parar</ion-button>
+      <ion-button (click)="storageService.zerarTimerAtendimento()" color="secondary">Zerar</ion-button>
       <ion-button (click)="storageService.resetTimerAtendimento()" color="danger">Reiniciar</ion-button>
 
         <h1>{{storageService.displayTimer()}}</h1>
 
     </ion-card-content>
   </ion-card>
+
+  <div style="text-align:center">
+    <app-charts></app-charts>
+  </div>
+
+  <app-chartbar></app-chartbar>
+
+  <app-chartline></app-chartline>
+
+
 
 
   <ion-fab vertical="bottom" horizontal="end" slot="fixed">

@@ -9,6 +9,7 @@ import { firebaseConfig } from './credential';
 import {AngularFireModule} from "@angular/fire/compat"
 import { AngularFireStorageModule } from '@angular/fire/compat/storage';
 
+
 // import { provideFirebaseApp, getApp, initializeApp } from '@angular/fire/app';
 // import { getFirestore, provideFirestore } from '@angular/fire/firestore';
 // import { AngularFireAuthModule } from "@angular/fire/compat/auth";
@@ -24,7 +25,7 @@ import { StorageService } from './services/storage.service';
 import { AngularFireAuthModule } from '@angular/fire/compat/auth';
 import { AuthService } from './services/auth.service';
 
-// import { getAuth, provideAuth } from '@angular/fire/auth';
+import { NgApexchartsModule } from 'ng-apexcharts'
 
 
 @NgModule({
@@ -33,6 +34,7 @@ import { AuthService } from './services/auth.service';
     AngularFireModule.initializeApp(firebaseConfig),
     AngularFireStorageModule,
     AngularFireAuthModule,
+    NgApexchartsModule
   ],
   providers: [{ provide: RouteReuseStrategy, useClass: IonicRouteStrategy },
     TaskService, CameraService, StorageService, AuthService],
